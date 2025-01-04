@@ -1,6 +1,7 @@
 //Find two numbers in an array that add up to a target sum
 import java.util.*;
 public class two_sum {
+    //Brute force approach -> time complexity O(n^2)
     static int[] brute(int[] nums, int target) {
         int[] result = new int[2];
         for(int i = 0; i < nums.length; i++) {
@@ -14,11 +15,12 @@ public class two_sum {
         }
         return result;
     }
+    //Two pointer approach -> time complexity O(nlogn)
     static int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         int[] result = new int[2];
         int st = 0, end = n - 1;
-        Arrays.sort(nums);
+        Arrays.sort(nums); // Sort the array
         while(st < end) {
             if(nums[st] + nums[end] == target) {
                 result[0] = nums[st];

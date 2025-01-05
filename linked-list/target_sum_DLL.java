@@ -1,5 +1,6 @@
+
 import java.util.*;
-public class TwoSumLinkedList {
+public class target_sum_DLL {
     public static class ListNode {
         int data;
         ListNode next, prev;

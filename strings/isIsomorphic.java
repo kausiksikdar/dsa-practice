@@ -1,6 +1,6 @@
 // Source: LeetCode
 import java.util.*;
-public class uniqueCharCnt {
+public class isIsomorphic {
     static int uniqueCnt(String s)
     {
         HashSet<Character> uniqueCnt = new HashSet<>();

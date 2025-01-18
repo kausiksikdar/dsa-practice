@@ -2,6 +2,7 @@ import java.util.*;
 
 public class rat_in_a_maze
 {
+    //Recursive code
     static void add(int row, int col, int new_row, int new_col, List<Character> temp)
     {
         if(new_row - row == 0 && new_col - col == 1)

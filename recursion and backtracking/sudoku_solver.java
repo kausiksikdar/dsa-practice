@@ -74,13 +74,11 @@ public static void solveSudoku(char[][] board) {
             {'.','.','.','.','8','.','.','7','9'}
             };
             solveSudoku(board);
-            for(int i=0;i<board.length;i++)
-            {
-                for(int j=0;j<board[0].length;j++)
-                {
-                    System.out.print(board[i][j]+" ");
-                }
-                System.out.println();
-            }
+    for (char[] board1 : board) {
+        for (int j = 0; j<board[0].length; j++) {
+            System.out.print(board1[j] + " ");
+        }
+        System.out.println();
+    }
     }
 }

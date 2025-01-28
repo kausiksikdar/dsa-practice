@@ -83,6 +83,7 @@ public class NQueens {
 
     public static void main(String[] args) {
         int n = 4;
-        System.out.println(solveNQueensOpt(4));
+        System.out.println(solveNQueens(n));
+        System.out.println(solveNQueensOpt(n));
     }
 }

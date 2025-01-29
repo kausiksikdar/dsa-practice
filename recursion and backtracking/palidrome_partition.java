@@ -34,7 +34,6 @@ public class palidrome_partition
     public static void main(String args[]) {
         String s = "aabb";
         List < List < String >> ans = partition(s);
-        int n = ans.size();
         System.out.println("The Palindromic partitions are :-");
         System.out.print(" [ ");
         for (int i = 0; i < ans.size(); i++) {

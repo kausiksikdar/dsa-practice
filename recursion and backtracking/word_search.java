@@ -4,30 +4,9 @@
 * by searching in all four directions (up, down, left, right)
 */
 public class word_search {
-    /**
-     * Checks if the given coordinates are valid within the board boundaries
-     * @param j Row coordinate to check
-     * @param k Column coordinate to check
-     * @param n Number of rows in board
-     * @param m Number of columns in board
-     * @return true if coordinates are valid, false otherwise
-     */
     static boolean valid(int j, int k, int n, int m) {
         return j >= 0 && j < n && k >= 0 && k < m;
     }
-    
-    /**
-     * Recursive function to find if remaining part of word exists starting from current position
-     * @param board The 2D character board
-     * @param word The word to search for
-     * @param ind Current index in the word being matched
-     * @param n Number of rows in board
-     * @param m Number of columns in board
-     * @param row Current row position
-     * @param col Current column position
-     * @param visited Boolean matrix to track visited cells
-     * @return true if word is found, false otherwise
-     */
     static boolean find(char[][] board, String word, int ind, int n, int m, int row, int col, boolean[][] visited) {
         // Base case: if we've matched all characters, word is found
         if(ind == word.length())
@@ -55,13 +34,6 @@ public class word_search {
         visited[row][col] = false;
         return false;
     }
-    
-    /**
-     * Main function to check if a word exists in the board
-     * @param board The 2D character board
-     * @param word The word to search for
-     * @return true if word exists in board, false otherwise
-     */
     public static boolean exist(char[][] board, String word) {
         int n = board.length;
         int m = board[0].length;
@@ -77,11 +49,6 @@ public class word_search {
                 }
         return false;
     }
-    
-    /**
-     * Main method with test cases
-     * @param args Command line arguments (not used)
-     */
     public static void main(String[] args) {
         // Test case 1: Word exists in snake pattern
         char[][] board1 = {
